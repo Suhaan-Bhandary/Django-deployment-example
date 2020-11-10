@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_filter %}
+
+  {% block body_block %}
+    <h1>Welcome to index.</h1>
+    <h2>{{text|my_cut_upper:"hello"}}
+      {{number|add:99}}</h2>
+  {% endblock %}
